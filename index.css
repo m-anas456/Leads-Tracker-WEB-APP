@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: "Poppins";
+    max-width: 300px;
+    background-color: #0D0D0D;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+#logo{
+    width: 50px;
+    border-radius: 50%;
+    
+}
+.logocont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    font-weight: bold;
+    color: #4CAF50;
+
+}
+
+
+input {
+    width: 100%;
+    padding: 7px 20px;
+    margin-bottom: 5px;
+    border: solid 2px #5f9341;
+    border-radius: 4px;
+    font-family: inherit;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+input[type="text"]:focus{
+    outline: none;
+    /* background-color: #0D0D0D; */
+    border: 2px solid   #4CAF50;
+    box-shadow: 0 0 7px #4CAF50;
+    transition: all 0.3s ease ;
+}
+
+button {
+    padding: 10px 17px;
+    background-color: #4CAF50;
+    border: solid px;
+    color: white;
+    box-sizing: border-box;
+    /* font-weight: bold; */
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#input-btn:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff88;
+}
+
+#del-btn {
+    background-color: #F44336;
+}
+
+#del-btn:hover {
+    cursor: pointer;
+    /* font-weight: bold; */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #F44336;
+}
+
+
+ul {
+    padding: 0;
+    list-style: none;
+    /* font-style: italic; */
+    padding: 10px;
+    background: #1e1e1e;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+a {
+    color: #90FFDC;
+}
+p{
+    position:relative;
+    bottom: -100px;
+}
