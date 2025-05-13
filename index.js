@@ -16,11 +16,21 @@ delbtn.addEventListener("dblclick", () => {
     renderLeads(myLeads) 
 })
 btn.addEventListener("click", function () {
-    myLeads.push(input.value)
-    input.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    renderLeads(myLeads) // Pass myLeads here
+    let url = input.value.trim()
+    
+    // Prepend https:// if it's missing
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url = "https://" + url
+    }
+
+    if (url) {
+        myLeads.push(url)
+        input.value = ""
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        renderLeads(myLeads)
+    }
 })
+
 
 function renderLeads(leads) {
     let allinnerhtml = "" // Reset the variable to avoid duplication
